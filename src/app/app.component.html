@@ -1,0 +1,34 @@
+<h2>UUID</h2>
+
+<p>Generate a new UUID simply by clicking the buttons below.</p>
+
+<hr>
+
+<div class="wrapper">
+  <form *ngIf="formGroup" [formGroup]="formGroup">
+    <div class="field">
+      <label for="parts">Parts (default 4)</label>
+      <input id="parts" type="number" formControlName="parts">
+    </div>
+    <div class="field">
+      <label for="separator">Separator (default `-`)</label>
+      <input id="separator" type="text" formControlName="separator">
+    </div>
+    <div class="field">
+      <label for="prefix">Prefix</label>
+      <input id="prefix" type="text" formControlName="prefix">
+    </div>
+    <div class="field">
+      <label for="suffix">Suffix</label>
+      <input id="suffix" type="text" formControlName="suffix">
+    </div>
+
+    <button (click)="getRandomIdTimestamp()">Generate Timestamp Based UUIO</button>
+    <button (click)="getRandomId()">Generate Random UUIO</button>
+  </form>
+
+  <div class="results">
+    <p>Result</p>
+    <pre>{{ result | json }}</pre>
+  </div>
+</div>
