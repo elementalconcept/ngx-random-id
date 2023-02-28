@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
 import { RandomIdService } from '@elemental-concept/ngx-random-id';
@@ -8,7 +8,7 @@ import { RandomIdService } from '@elemental-concept/ngx-random-id';
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.scss' ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   result: string;
 
   formGroup: FormGroup;
