@@ -21,7 +21,7 @@ describe('RandomIdService', () => {
   });
 
   it('should create uuid with n quadruplet', () => {
-    // i.e.: as1f-qwe3r-rt5u
+    // i.e.: as1f_qwe3r_rt5u
     const result1 = service.getRandomId(3, '_');
 
     expect(result1.split('_').length).toEqual(3);
