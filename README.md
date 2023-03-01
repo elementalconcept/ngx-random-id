@@ -3,15 +3,15 @@
 Create UUIDs for your application.
 The single purpose of this library is to test this simple code once and for all
 
-## Installation
+| Last version | Angular Versions       | Node | Typescript |
+|--------------|------------------------|------|------------|
+| `1.0.0`      | 9+ up to 15 (included) | 14   | 4.6        |
 
-With npm:
+## 🛠 Installation
 
-```Shell
-npm i @elemental-concept/ngx-random-id
-```
+- With **npm**: `npm i --save @elemental-concept/ngx-random-id`
 
-## Usage
+## 📖 Usage
 
 Simply use the service into your component:
 
@@ -23,23 +23,23 @@ Simply use the service into your component:
 })
 export class RandomIdPageComponent implements OnInit {
   result: string;
-  
+
   constructor(private readonly randomIdService: RandomIdService) {
   }
 
   ngOnInit() {
     // i.e.: 1410715640579
     this.result = this.randomIdService.getRandomIdTimestamp();
-    
+
     // i.e.: as1f-qwe3r-rt5u-fghj
     this.result = this.randomIdService.getRandomId();
-    
+
     // i.e.: as1f_qwe3r_rt5u
     this.result = this.randomIdService.getRandomId(3, '_');
-    
+
     // i.e.: PREFIX-1410715640579-SUFFIX
     this.result = this.randomIdService.getRandomIdTimestamp('-', 'PREFIX', 'SUFFIX');
-    
+
     // i.e.: PREFIX_as1f_qwe3r_rt5u_fghj_SUFFIX
     this.result = this.randomIdService.getRandomId(4, '_', 'PREFIX', 'SUFFIX');
   }
