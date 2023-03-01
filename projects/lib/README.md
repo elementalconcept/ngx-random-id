@@ -1,53 +1,47 @@
 # Random Id
 
-Use this library if you need to `create UUIDs` in your application.
-The main purpose is to remove all the randomId other lis and related tests from the main application.
+Create UUIDs for your application.
+The single purpose of this library is to test this simple code once and for all
 
 ## Installation
 
 With npm:
 
 ```Shell
-npm i @elemental/random-id
-```
-
-With Yarn:
-
-```Shell
-yarn add @elemental/random-id
+npm i @elemental-concept/ngx-random-id
 ```
 
 ## Usage
 
-Simply use the service into your component/service:
+Simply use the service into your component:
 
 ```typescript
 @Component({
-  selector: 'app-random-dd-page',
+  selector: 'app-random-id-page',
   templateUrl: './random-id-page.component.html',
   styleUrls: [ './random-id-page.component.scss' ]
 })
-export class UuidPageComponent implements OnInit {
+export class RandomIdPageComponent implements OnInit {
   result: string;
-  
+
   constructor(private readonly randomIdService: RandomIdService) {
   }
 
   ngOnInit() {
     // i.e.: 1410715640579
     this.result = this.randomIdService.getRandomIdTimestamp();
-    
+
     // i.e.: as1f-qwe3r-rt5u-fghj
     this.result = this.randomIdService.getRandomId();
-    
-    // i.e.: as1f-qwe3r-rt5u
+
+    // i.e.: as1f_qwe3r_rt5u
     this.result = this.randomIdService.getRandomId(3, '_');
-    
+
     // i.e.: PREFIX-1410715640579-SUFFIX
     this.result = this.randomIdService.getRandomIdTimestamp('-', 'PREFIX', 'SUFFIX');
-    
-    // i.e.: PREFIX-as1f-qwe3r-rt5u-fghj-SUFFIX
-    this.result = this.randomIdService.getRandomId(4, '-', 'PREFIX', 'SUFFIX');
+
+    // i.e.: PREFIX_as1f_qwe3r_rt5u_fghj_SUFFIX
+    this.result = this.randomIdService.getRandomId(4, '_', 'PREFIX', 'SUFFIX');
   }
 }
 ```
