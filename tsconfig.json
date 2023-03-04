@@ -3,7 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@elemental-concept/ngx-random-id": [
+      "@elemental-concept/random-id": [
         "dist/lib"
       ]
     },

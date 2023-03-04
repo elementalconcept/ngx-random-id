@@ -9,7 +9,7 @@ The single purpose of this library is to test this simple code once and for all
 
 ## 🛠 Installation
 
-- With **npm**: `npm i --save @elemental-concept/ngx-random-id`
+- With **npm**: `npm i --save @elemental-concept/random-id`
 
 ## 📖 Usage
 

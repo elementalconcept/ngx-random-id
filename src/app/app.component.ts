@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 
-import { RandomIdService } from '@elemental-concept/ngx-random-id';
+import { RandomIdService } from '@elemental-concept/random-id';
 
 @Component({
   selector: 'app-root',

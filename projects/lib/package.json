@@ -1,10 +1,10 @@
 {
-  "name": "@elemental-concept/ngx-random-id",
+  "name": "@elemental-concept/random-id",
   "version": "1.0.0",
   "description": "Use this library if you need to `create UUIDs` in your application.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/elementalconcept/ngx-random-id.git"
+    "url": "git+https://github.com/elementalconcept/random-id.git"
   },
   "keywords": [
     "UUID",
@@ -14,9 +14,9 @@
   "author": "Elemental Concept",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/elementalconcept/ngx-random-id/issues"
+    "url": "https://github.com/elementalconcept/random-id/issues"
   },
-  "homepage": "https://github.com/elementalconcept/ngx-random-id#readme",
+  "homepage": "https://github.com/elementalconcept/random-id#readme",
   "peerDependencies": {
     "@angular/common": "^15.0.0",
     "@angular/core": "^15.0.0"
