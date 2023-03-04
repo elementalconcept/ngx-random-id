@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ngx-random-id.iml" filepath="$PROJECT_DIR$/.idea/ngx-random-id.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/random-id.iml" filepath="$PROJECT_DIR$/.idea/random-id.iml" />
     </modules>
   </component>
 </project>
