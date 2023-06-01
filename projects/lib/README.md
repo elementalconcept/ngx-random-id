@@ -5,7 +5,7 @@ The single purpose of this library is to test this simple code once and for all
 
 | Last version | Angular Versions       | Node | Typescript |
 |--------------|------------------------|------|------------|
-| `1.0.0`      | 9+ up to 15 (included) | 14   | 4.6        |
+| `1.1.1`      | 9+ up to 15 (included) | 14   | 4.6        |
 
 ## 🛠 Installation
 
