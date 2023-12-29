@@ -27,7 +27,7 @@ export class RandomIdService {
   getRandomId = (parts = this.defaultParts,
                  separator = this.defaultSeparator,
                  prefix: string | null = null,
-                 suffix: string | null = null) => {
+                 suffix: string | null = null): string => {
 
     const array = [];
 
