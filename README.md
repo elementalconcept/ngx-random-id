@@ -3,9 +3,7 @@
 Create UUIDs for your application.
 The single purpose of this library is to test this simple code once and for all
 
-| Last version | Angular Versions       | Node | Typescript |
-|--------------|------------------------|------|------------|
-| `1.1.1`      | 9+ up to 15 (included) | 14   | 4.6        |
+[![npm version](https://badge.fury.io/js/%40elemental-concept%2Frandom-id.svg)](https://badge.fury.io/js/%40elemental-concept%2Frandom-id)
 
 ## 🛠 Installation
 
