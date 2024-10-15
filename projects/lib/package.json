@@ -1,6 +1,6 @@
 {
   "name": "@elemental-concept/random-id",
-  "version": "17.0.0",
+  "version": "18.0.0",
   "description": "Use this library if you need to `create UUIDs` in your application.",
   "repository": {
     "type": "git",
